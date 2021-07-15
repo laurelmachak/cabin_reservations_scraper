@@ -14,9 +14,11 @@ A script that logins to the river homes owner portal, and extracts all data from
     $ source env/bin/activate
 
     #install dependencies
+    (env)
     $ pip install -r requirements.txt
 
     #create credentials.py (to store EMAIL & PIN)
+    (env)
     $ touch credentials.py
     ```
 
@@ -27,3 +29,20 @@ A script that logins to the river homes owner portal, and extracts all data from
     PIN = '5555'
     ```
 
+## Usage
+Just run the *scraper.py*! (Make sure you have the virtual environment activated)
+
+```bash
+(env)
+$ python3 scraper.py
+```
+- The first time you run the script, a new file, *reservations.json*, will be created
+- If *reservations.json* already exists, the script will rewrite with the most recent data every time you run the script
+
+## Notes
+Deactivating the virtual environment: 
+
+```bash
+(env)
+$ deactivate
+```
