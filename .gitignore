@@ -1,0 +1,5 @@
+.vscode/
+credentials.py
+env/
+__pycache__/
+reservations.json
